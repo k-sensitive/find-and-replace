@@ -17,8 +17,9 @@ describe('String#find_and_replace') do
   it("replaces a word and handles capitalization") do
     expect("Hello WoRld".find_and_replace("world", "universe")).to(eq("hello universe"))
   end
-  # it("replaces a partial matches in larger words") do
-  #   expect("cathedral".find_and_replace("cat", "fish")).to(eq("fishthedral"))
-  # end
+
+  it("replaces a partial matches in larger words") do
+    expect("cathedral".find_and_replace("cat", "fish")).to(eq("fishhedral"))
+  end
 
 end
