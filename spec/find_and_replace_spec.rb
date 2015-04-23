@@ -14,7 +14,7 @@ describe('String#find_and_replace') do
     expect("MeGaTrOn".find_and_replace("megatron", "doilies")).to(eq("doilies"))
   end
 
-  it("replaces a word and handles capitalization") do
+  it("replaces a word in a phrase and handles capitalization") do
     expect("Hello WoRld".find_and_replace("world", "universe")).to(eq("hello universe"))
   end
 
